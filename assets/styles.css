@@ -109,7 +109,8 @@ ul,ol{margin:0;padding:0;list-style:none}
   padding:12px 20px;border-radius:var(--r-sm);font-weight:700;font-size:.9rem;letter-spacing:.01em;
   transition:background .5s var(--ease);
 }
-.nav-cta:hover{background:var(--accent)}
+.nav-links > a.nav-cta{color:#ffffff}
+.nav-links > a.nav-cta:hover{background-color:var(--accent);border-color:var(--accent);color:#ffffff}
 .nav-cta::after{display:none}
 .nav-tgl{display:none;background:none;border:0;padding:8px;cursor:pointer}
 .nav-tgl span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.3s var(--ease)}
@@ -217,7 +218,9 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 .svc-art img{width:100%;height:clamp(300px,32vw,430px);object-fit:cover;transition:transform 1.4s var(--ease),filter 1.4s var(--ease)}
 .svc-art:hover img{transform:scale(1.05);filter:brightness(1.05)}
 .svc-num{
-  position:absolute;top:0;left:0;background:var(--ink);color:#fff;z-index:2;
+  position:absolute;top:0;left:0;background-color:#14171c;color:#fff;z-index:2;
+  transition:background-color .5s var(--ease),border-color .5s var(--ease),color .5s var(--ease),box-shadow .5s var(--ease);
+  border:1.5px solid #14171c;
   font-family:var(--font-display);font-weight:700;font-size:.86rem;letter-spacing:.1em;
   padding:9px 15px;
 }

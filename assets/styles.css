@@ -62,17 +62,19 @@ ul,ol{margin:0;padding:0;list-style:none}
 .kicker.on-dark::before{background:var(--volt)}
 
 /* ---------- przyciski ---------- */
+.btn,.who-card,.rev,.why-item,.sos-list li,.nav-cta,.svc-num,.f-soc .soc,.ct-row .ic{
+  transition:background-color .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease),box-shadow .5s var(--ease);
+}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   padding:15px 26px;border-radius:var(--r-sm);border:1.5px solid transparent;
   font-family:var(--font-body);font-weight:700;font-size:.94rem;letter-spacing:.005em;
-  cursor:pointer;position:relative;overflow:hidden;
-  transition:background .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease),box-shadow .5s var(--ease);
+  cursor:pointer;position:relative;
 }
 .btn .arr{transition:transform .5s var(--ease)}
 .btn:hover .arr{transform:translateX(5px)}
-.btn-solid{background:var(--accent);color:#fff;box-shadow:0 1px 0 rgba(0,0,0,.06)}
-.btn-solid:hover{background:var(--accent-d);box-shadow:0 10px 26px -12px rgba(215,34,43,.75)}
+.btn-solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-solid:hover{background:var(--accent-d);border-color:var(--accent-d)}
 .btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn-line:hover{border-color:var(--ink);background:var(--ink);color:#fff}
 .btn-ondark{background:transparent;color:#fff;border-color:rgba(255,255,255,.34)}
@@ -197,7 +199,7 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
   display:flex;flex-direction:column;gap:var(--sp-3);
   transition:box-shadow .55s var(--ease),transform .55s var(--ease),border-color .55s var(--ease);
 }
-.who-card:hover{box-shadow:0 26px 50px -34px rgba(20,23,28,.55);border-color:var(--line)}
+.who-card:hover{background:var(--paper-2);border-color:var(--line)}
 .who-card h3{font-size:1.14rem}
 .who-card p{font-size:.94rem;color:var(--muted);flex:1}
 .who-card .go{
@@ -215,15 +217,15 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 .svc-art img{width:100%;height:clamp(300px,32vw,430px);object-fit:cover;transition:transform 1.4s var(--ease),filter 1.4s var(--ease)}
 .svc-art:hover img{transform:scale(1.05);filter:brightness(1.05)}
 .svc-num{
-  position:absolute;top:0;left:0;background:var(--ink);color:#fff;
+  position:absolute;top:0;left:0;background:var(--ink);color:#fff;z-index:2;
   font-family:var(--font-display);font-weight:700;font-size:.86rem;letter-spacing:.1em;
   padding:9px 15px;
 }
 .svc-copy h3{margin-bottom:var(--sp-4)}
 .svc-copy > p{color:var(--muted);margin-bottom:var(--sp-5)}
 .svc-items li{
-  display:flex;gap:14px;padding:13px 0;border-top:1px solid var(--line-soft);
-  font-size:.955rem;line-height:1.5;
+  display:flex;gap:14px;padding:17px 0;border-top:1px solid var(--line-soft);
+  font-size:.955rem;line-height:1.62;
 }
 .svc-items li:last-child{border-bottom:1px solid var(--line-soft)}
 .svc-items .dot{
@@ -253,7 +255,7 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 .why-item:hover{background:var(--paper-2)}
 .why-item .n{
   font-family:var(--font-display);font-size:2.4rem;font-weight:700;letter-spacing:-.04em;
-  color:var(--paper-3);line-height:1;
+  color:#aab2bd;line-height:1;
 }
 .why-item h3{font-size:1.16rem}
 .why-item p{color:var(--muted);font-size:.955rem}
@@ -270,7 +272,7 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
   display:flex;flex-direction:column;gap:var(--sp-4);
   transition:box-shadow .55s var(--ease),border-color .55s var(--ease);
 }
-.rev:hover{box-shadow:0 26px 50px -36px rgba(20,23,28,.5)}
+.rev:hover{background:var(--paper-2)}
 .rev .stars{color:var(--volt);letter-spacing:2px;font-size:.9rem}
 .rev blockquote{margin:0;font-size:.985rem;line-height:1.62;color:var(--ink-2);flex:1}
 .rev cite{font-style:normal;font-weight:700;font-size:.87rem;display:flex;align-items:center;gap:8px}
@@ -400,3 +402,5 @@ footer{background:var(--ink);color:rgba(255,255,255,.68);padding-block:var(--sp-
   transition:background .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease);
 }
 .f-soc .soc:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+.svc-art:hover .svc-num{background:var(--accent)}

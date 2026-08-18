@@ -62,7 +62,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .kicker.on-dark::before{background:var(--volt)}
 
 /* ---------- przyciski ---------- */
-.btn,.who-card,.rev,.why-item,.sos-list li,.nav-cta,.svc-num,.f-soc .soc,.ct-row .ic{
+.btn,.who-card,.rev,.why-item,.sos-list li,.nav-cta,.f-soc .soc,.ct-row .ic{
   transition:background-color .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease),box-shadow .5s var(--ease);
 }
 .btn{
@@ -219,8 +219,7 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 .svc-art:hover img{transform:scale(1.05);filter:brightness(1.05)}
 .svc-num{
   position:absolute;top:0;left:0;background-color:#14171c;color:#fff;z-index:2;
-  transition:background-color .5s var(--ease),border-color .5s var(--ease),color .5s var(--ease),box-shadow .5s var(--ease);
-  border:1.5px solid #14171c;
+  border:1.5px solid #14171c;pointer-events:none;user-select:none;
   font-family:var(--font-display);font-weight:700;font-size:.86rem;letter-spacing:.1em;
   padding:9px 15px;
 }
@@ -406,4 +405,4 @@ footer{background:var(--ink);color:rgba(255,255,255,.68);padding-block:var(--sp-
 }
 .f-soc .soc:hover{background:#fff;color:var(--ink);border-color:#fff}
 
-.svc-art:hover .svc-num,.svc-num:hover{background-color:var(--accent);border-color:var(--accent)}
+.svc-art:hover .svc-num{background-color:var(--accent);border-color:var(--accent);transition:background-color .5s var(--ease),border-color .5s var(--ease)}

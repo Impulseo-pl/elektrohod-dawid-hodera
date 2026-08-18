@@ -211,7 +211,7 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 .who-card:hover .go .arr{transform:translateX(5px)}
 
 /* ---------- usługi (naprzemienne bloki) ---------- */
-.svc{display:grid;gap:clamp(46px,6vw,96px)}
+.uslugi{display:grid;gap:clamp(46px,6vw,96px)}
 .svc-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,4.5vw,70px);align-items:center}
 .svc-row:nth-child(even) .svc-art{order:-1}
 .svc-art{position:relative;overflow:hidden;border-radius:var(--r-md);background-color:var(--paper-2);border:1.5px solid transparent}

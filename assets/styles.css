@@ -105,7 +105,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 }
 .nav-links > a:hover::after{transform:scaleX(1)}
 .nav-cta{
-  display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;
+  display:inline-flex;align-items:center;gap:9px;background-color:#14171c;color:#ffffff;
   padding:12px 20px;border-radius:var(--r-sm);font-weight:700;font-size:.9rem;letter-spacing:.01em;
   transition:background .5s var(--ease);
 }
@@ -254,8 +254,8 @@ section{padding-block:clamp(58px,7vw,var(--sp-9))}
 }
 .why-item:hover{background:var(--paper-2)}
 .why-item .n{
-  font-family:var(--font-display);font-size:2.4rem;font-weight:700;letter-spacing:-.04em;
-  color:#aab2bd;line-height:1;
+  font-family:var(--font-display);font-size:1.55rem;font-weight:700;letter-spacing:-.02em;
+  color:var(--muted);line-height:1;
 }
 .why-item h3{font-size:1.16rem}
 .why-item p{color:var(--muted);font-size:.955rem}
@@ -403,4 +403,4 @@ footer{background:var(--ink);color:rgba(255,255,255,.68);padding-block:var(--sp-
 }
 .f-soc .soc:hover{background:#fff;color:var(--ink);border-color:#fff}
 
-.svc-art:hover .svc-num{background:var(--accent)}
+.svc-art:hover .svc-num,.svc-num:hover{background-color:var(--accent);border-color:var(--accent)}
